@@ -1,0 +1,25 @@
+{
+  "name": "lua-counter",
+  "type": "module",
+  "scripts": {
+    "luacounter:deploy": "cd ./ao/luacounter && ./scripts/deploy.sh",
+    "luacounter:test": "cd ./ao/luacounter && ./scripts/test.sh",
+    "luacounter:build": "cd ./ao/luacounter && ./scripts/build.sh",
+    "luacounter:inject": "STATE_FILE=./ao/luacounter/state-processes.yaml node ./utils/inject-process.js",
+    "frontend:dev": "cd ./apps/frontend && npm run dev",
+    "frontend:build": "cd ./apps/frontend && npm run build",
+    "frontend:deploy": "cd ./apps/frontend && npm run deploy"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "aoform": "latest",
+    "yaml": "^2.4.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "ao/*"
+  ]
+}
