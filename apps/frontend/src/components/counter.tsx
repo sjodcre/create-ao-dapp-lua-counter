@@ -62,8 +62,10 @@ export default function Counter() {
 
 			return undefined;
 		},
-		onSuccess: () => {
+		onSuccess: (data) => {
+			console.log("IncreaseCounter result:", data);
 			queryClient.invalidateQueries();
+
 		},
 	});
 
@@ -93,7 +95,8 @@ export default function Counter() {
 
 			return undefined;
 		},
-		onSuccess: () => {
+		onSuccess: (data) => {
+			console.log("ResetCounter result:", data);
 			queryClient.invalidateQueries();
 		},
 	});
