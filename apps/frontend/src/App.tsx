@@ -1,7 +1,7 @@
 import { ConnectButton } from "arweave-wallet-kit";
 import "./App.css";
 import Counter from "./components/counter";
-import { COUNTER } from "./constants/counter_process";
+import { LUACOUNTER } from "./constants/luacounter_process";
 import aoLogo from "/ao.svg";
 import reactLogo from "/react.svg";
 import viteLogo from "/vite.svg";
@@ -24,11 +24,11 @@ function App() {
       <p className="read-the-docs">
         AO Books Process:{" "}
         <a
-          href={`https://www.ao.link/#/entity/${COUNTER}`}
+          href={`https://www.ao.link/#/entity/${LUACOUNTER}`}
           target="_blank"
           rel="noreferrer"
         >
-          {COUNTER}
+          {LUACOUNTER}
         </a>
       </p>
       <div className="card">

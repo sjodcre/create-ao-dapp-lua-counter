@@ -1,0 +1,1 @@
+export const LUACOUNTER = "No5Mnta_K_taPg_Dxm_hpOFwitjeSuOl6FHaus5zVO8";
